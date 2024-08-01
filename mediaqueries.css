@@ -103,4 +103,42 @@
     .text-container {
       text-align: justify;
     }
+    .container {
+      width: 90%;
+      margin: auto;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  
+    .col-25, .col-75 {
+      width: 100%;
+      padding: 0;
+    }
+  
+    
   }
+
+  /* Medium devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  .col-25, .col-75 {
+    flex: 100%;
+    padding: 0;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+  }}
+
+  /* Large devices (desktops, 1024px and below) */
+@media (max-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+}
