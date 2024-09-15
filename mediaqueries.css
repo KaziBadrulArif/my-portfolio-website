@@ -10,10 +10,10 @@
   #contact, #projects {
     height: fit-content;
   }
-  /* Make project cards display in 3 columns */
+  /* Display project cards in a column for larger screens */
   #projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 2rem; /* Adjust spacing between cards */
   }
 }
@@ -49,10 +49,11 @@
   .about-containers {
     margin-top: 0;
   }
-  /* Adjust project cards to display in 2 columns */
+  /* Display project cards in rows for medium screens (2 per row) */
   #projects {
+    display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-    gap: 1.5rem; /* Adjust the spacing */
+    gap: 1.5rem;
   }
 }
 
@@ -106,9 +107,9 @@
   .text-container {
     text-align: justify;
   }
-  /* Adjust project cards to display in 1 column */
+  /* Display project cards in rows for small screens (1 per row) */
   #projects {
     grid-template-columns: 1fr; /* 1 card per row */
-    gap: 1rem; /* Adjust the spacing */
+    gap: 1rem;
   }
 }
